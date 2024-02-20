@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Date: <span class="date"></span></h2>
+        <h2>Date: <span class="time"></span></h2>
+    </div>    
+    <script>
+        let date = document.querySelector('.date');
+        let time = document.querySelector('.time');
+
+        const dateobj = new Date();
+        console.log(dateobj.toLocaleString());
+        date.innerHTML= dateobj.toLocaleDateString();       
+        
+        setInterval(()=>{const clock=new Date();        
+        time.innerHTML=clock.toLocaleTimeString() },1000)
+
+
+       
+    </script>
+</body>
+</html>,,

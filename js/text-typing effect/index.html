@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<style>
+    .container{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100vh;
+        border:2px solid red;
+        
+    }
+    #element{
+        color:red;
+       
+    }
+</style>
+</head>
+<body>
+    <!-- search on google type js cdn find github link -->
+    <div class="container">
+        <div>
+            <span id="element"></span>
+        </div>
+    </div>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Frontend Developr', 'Web Designer'],
+          typeSpeed: 80,
+          loop:true
+        });
+      </script>
+</body>
+</html>
