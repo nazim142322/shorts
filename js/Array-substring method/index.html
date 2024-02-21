@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The substring() method in JavaScript is used to extract a portion of a string and return it as a new string, without modifying the original string. It takes two parameters: the starting index (inclusive) and the ending index (exclusive) of the portion to be extracted.</p>
+    <script>
+        let str2="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident necessitatibus ab temporibus repellat explicabo, sequi fuga corrupti amet, eius illum aut nesciunt, aliquam reprehenderit cupiditate quis praesentium excepturi minus sit. Nihil dolorum mollitia nisi cumque obcaecati. Earum corporis autem quas odit dolor laboriosam aspernatur. Neque autem reiciendis commodi a quis nobis eius voluptas ea provident nemo ratione vel hic architecto voluptate eligendi non doloribus rerum expedita ducimus, libero inventore soluta et? Deserunt impedit natus aut consequuntur eaque ab, voluptas, repudiandae voluptatem vitae aliquid sapiente exercitationem iure unde nesciunt nihil, id commodi non quo facilis cum libero debitis doloribus! Voluptas."
+        // console.log(str.length);
+        // let newstr= str.substring(0,100).concat("...");
+        // console.log(newstr)
+
+        function myfun(str){
+            newstr=str.substring(0,100).concat('...');
+            return newstr;
+        }
+        console.log(myfun(str2))
+    </script>
+</body>
+</html>

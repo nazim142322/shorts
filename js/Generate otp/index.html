@@ -7,16 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <p></p>
+    <button onclick="generateOTP()">generate</button> -->
+
     <script>
-        function gereratOTP(){
+        function generateOTP(){
             let otp="";
             for(let i=1; i<=6; i++)
             {
-                otp+=Math.floor(Math.random()*10)
+                otp+=Math.floor(Math.random()*10);
             }
+            
             return otp;
         }
-        document.write(`${gereratOTP()} is you OTP`);
+        
+        document.write(`${generateOTP()} is you OTP`);
 
         console.log(Math.trunc(Math.random()*10));
 

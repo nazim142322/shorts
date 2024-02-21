@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find out second largest number
+        let arr1=[2, 6, 3, 9, 11, 4];
+        let arr2=[4,2,14,11,5,14];
+
+        // let final1 = arr1.sort((a,b)=>a-b)
+        // console.log(final1)
+        // let length=arr1.length;
+        // console.log(length);
+        // console.log(final1[length-2]);
+
+        // let final2= arr2.sort((a,b)=>a-b);
+        // let uniquearr=[...new Set(final2)];
+        // let length2= uniquearr.length;
+        // console.log(length2);
+        // console.log(uniquearr[length2-2]);
+
+   function secondLarge(arr){
+    const desc= arr.sort((a,b)=>b-a);
+    const unique =[...new Set(desc)];
+    return unique[1]
+   }
+   console.log(secondLarge(arr1));
+    </script>
+</body>
+</html>
