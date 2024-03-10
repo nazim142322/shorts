@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <input type="text" id="input1" placeholder="Enter first input"><br>
+    <input type="text" id="input2" placeholder="Enter second input"><br>
+    <button onclick="printInputs()">Print Inputs</button>
+
+    <script>
+        function printInputs() {
+            // Get the values from the input boxes
+            let input1 = document.getElementById('input1').value;
+            let input2 = document.getElementById('input2').value;
+
+            // Print the inputs to the console
+            console.log("First input:", input1);
+            console.log("Second input:", input2);
+
+            // Create a new PDF document
+            let doc = new jsPDF();
+            // Add text to the PDF document
+            doc.text(`First input: ${input1}`, 10, 10);
+            doc.text(`Second input: ${input2}`, 10, 20);
+
+            // Save the PDF document
+            doc.save("inputs.pdf");
+        }
+    </script>
+</body>
+</html>
